@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.rmc.thienle.jedi.ThirdActivity">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip">
+            <TextView
+                android:text="Name  :"
+                android:padding="3dip"
+                android:textSize="@dimen/font_size"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size"
+                android:id="@+id/task_name"
+                android:digits="@string/input_validate"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:layout_weight="1"
+                android:layout_span="2" />
+        </TableRow>
+        <View
+        android:layout_height="2dip"
+        android:background="@color/colorAccent" />
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip">
+            <TextView
+                android:text="From   :"
+                android:padding="3dip"
+                android:textSize="@dimen/font_size"/>
+            <TextView
+                android:text="00:00"
+                android:gravity="start"
+                android:padding="3dip"
+                android:layout_weight="1"
+                android:id="@+id/from"
+                android:textSize="@dimen/font_size"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip">
+            <TextView
+                android:text="To        :"
+                android:padding="3dip"
+                android:textSize="@dimen/font_size"/>
+            <TextView
+                android:text="00:00"
+                android:gravity="start"
+                android:padding="3dip"
+                android:layout_weight="1"
+                android:textSize="@dimen/font_size"
+                android:id="@+id/to" />
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="@color/colorAccent" />
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip">
+
+            <TextView
+                android:text="Repeat:"
+                android:gravity="start"
+                android:padding="3dip"
+                android:layout_weight="1"
+                android:textSize="@dimen/font_size" />
+        </TableRow>
+
+    <LinearLayout
+        android:weightSum="7"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="0dp"
+            android:textColor="@color/colorAccent"
+            android:singleLine="true"
+            android:checked="true"
+            android:textOn="MON"
+            android:textOff="MON"
+            android:id="@+id/mon"
+            android:layout_weight="1" />
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="0dp"
+            android:textColor="@color/colorAccent"
+            android:singleLine="true"
+            android:textOn="TUE"
+            android:textOff="TUE"
+            android:checked="true"
+            android:id="@+id/tue"
+            android:layout_weight="1" />
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="0dp"
+            android:textColor="@color/colorAccent"
+            android:singleLine="true"
+            android:textOn="WEN"
+            android:textOff="WEN"
+            android:checked="true"
+            android:id="@+id/wen"
+            android:layout_weight="1" />
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="0dp"
+            android:textColor="@color/colorAccent"
+            android:singleLine="true"
+            android:textOn="THU"
+            android:textOff="THU"
+            android:checked="true"
+            android:id="@+id/thu"
+            android:layout_weight="1" />
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="0dp"
+            android:textColor="@color/colorAccent"
+            android:singleLine="true"
+            android:checked="true"
+            android:textOn="FRI"
+            android:textOff="FRI"
+            android:id="@+id/fri"
+            android:layout_weight="1" />
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="0dp"
+            android:textColor="@color/colorAccent"
+            android:singleLine="true"
+            android:checked="true"
+            android:textOn="SAT"
+            android:textOff="SAT"
+            android:id="@+id/sat"
+            android:layout_weight="1" />
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="0dp"
+            android:textColor="@color/colorAccent"
+            android:singleLine="true"
+            android:checked="true"
+            android:textOn="SUN"
+            android:textOff="SUN"
+            android:id="@+id/sun"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+</TableLayout>

@@ -1,0 +1,44 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.rmc.thienle.jedi.MainActivity">
+
+    <item android:id="@+id/action_check_system"
+        android:title="@string/action_check_system"
+        app:showAsAction="never"/>
+    <item android:id="@+id/action_sync"
+        android:title="@string/action_sync"
+        app:showAsAction="always"/>
+    <item android:id="@+id/action_sync_time"
+        android:title="@string/action_sync_time"
+        app:showAsAction="never"/>
+    <item android:id="@+id/action_connect"
+        android:icon="@drawable/ic_bluetooth_disable"
+        android:title="@string/action_scan"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_delete_last_device"
+        android:orderInCategory="100"
+        android:title="@string/action_delete_last_device"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_add_fake_last_device"
+        android:orderInCategory="100"
+        android:title="@string/action_add_fake_last_device"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_delete_all"
+        android:orderInCategory="100"
+        android:title="@string/action_delete_all"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_add_item"
+        android:orderInCategory="100"
+        android:title="@string/action_add_item"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_help"
+        android:orderInCategory="100"
+        android:title="@string/action_Help"
+        app:showAsAction="never" />
+</menu>
